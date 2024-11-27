@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* navbar style */
+
+.active{
+    color: black !important;
+}
+
+.inactive{
+    color: white !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.carousel_container{
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    object-fit: contain;
+    padding: 10px;
+    user-select: none;
+    text-align: center;
+    align-items: center;
+}
+
+.carousel_img{
+    max-width: 60px;
+    box-shadow: 0 0 5px gray;
+    pointer-events: none;
+}
+
+.pagination>ul>li>.MuiPaginationItem-previousNext, .pagination>ul>li>.MuiPaginationItem-firstLast, .pagination>ul>li>.Mui-selected{
+    background-color: rgb(11, 87, 162);
+}
+
+#searchbar{
+    width: 500px;
+}
