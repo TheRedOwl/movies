@@ -8,8 +8,8 @@ export const ChangeSearchType = ({typeChange, setTypeChange}) => {
   return (
     <>
         <Stack direction="row" spacing={2}>
-            <Button variant="outlined" onClick={handleSearch} disabled={typeChange?true:false} >Movies</Button>
-            <Button variant="outlined" onClick={handleSearch} disabled={!typeChange?true:false} >Series</Button>
+            <Button variant="outlined" style={{backgroundColor:"white"}} onClick={handleSearch} disabled={typeChange?true:false} >Movies</Button>
+            <Button variant="outlined" style={{backgroundColor:"white"}} onClick={handleSearch} disabled={!typeChange?true:false} >Series</Button>
         </Stack>
     </>
   )

@@ -24,7 +24,7 @@ export const Genres = ({type,setUrlForGenres}) => {
     //console.log(data.genres);
 
     return (
-    <div>
+    <div style={{marginTop:"10px"}}>
         <Stack direction="row" spacing={1} flexWrap="wrap" gap="5px" justifyContent="center">
             {data.genres.map(obj=>
                 <SingleChip key={obj.id} {...obj} selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} />

@@ -22,9 +22,9 @@ export const SearchPage = () => {
 
   return (
     <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-      <div style={{paddingTop:"40px", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-between", height:"150px"}}>
+      <div style={{paddingTop:"40px", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around", height:"150px", gap:"20px", marginBottom:"80px"}}>
         <SearchBar searchText={searchText} setSearchText={setSearchText} setFetchData={setFetchData}/>
-        <Button onClick={handleClick}>search</Button>
+        <Button onClick={handleClick} style={{border:"2px solid rgb(11, 87, 162)", borderRadius:"10px", backgroundColor:"white"}}>search</Button>
         <ChangeSearchType setTypeChange={setTypeChange} typeChange={typeChange} />
       </div>
       {fetchData && <Content type={type} url={urlSearch}/> }

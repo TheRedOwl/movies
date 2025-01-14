@@ -10,7 +10,7 @@ export const SearchBar = ({searchText, setSearchText, setFetchData}) => {
 
   return (
     <div>
-        <TextField id="searchbar" label="Search for content" variant="outlined" value={searchText} onChange={handleChange} />
+        <TextField id="searchbar" label="Search for content" variant="outlined" value={searchText} onChange={handleChange} style={{backgroundColor:"white"}} />
     </div>
   )
 }

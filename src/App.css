@@ -51,3 +51,7 @@ a{
 #searchbar{
     width: 500px;
 }
+
+body{
+    background-color: gray;
+}

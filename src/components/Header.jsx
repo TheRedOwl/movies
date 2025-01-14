@@ -33,7 +33,7 @@ export const Header=()=> {
 
   return (
     <>
-    <AppBar position="static">
+    <AppBar position="static" backgroundColor="" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <LocalMoviesIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

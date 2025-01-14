@@ -19,7 +19,7 @@ export const Content = ({url,type}) => {
 
   return (
     <div className='content'>
-      <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
+      <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center", gap:"10px"}}>
         {data.results.map(obj=>
             <SingleContent key={obj.id} {...obj} type={type} />
         )}

@@ -18,6 +18,6 @@ export const SingleChip=({id,name,selectedGenres,setSelectedGenres})=> {
     }
 
   return (
-      <Chip icon={selected ? <CheckCircleIcon/> : <CheckCircleOutlineIcon/>} label={name} clickable onClick={handleClick} />
+      <Chip style={{backgroundColor:"white"}} icon={selected ? <CheckCircleIcon/> : <CheckCircleOutlineIcon/>} label={name} clickable onClick={handleClick} />
   );
 }
